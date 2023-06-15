@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/irish_green"
+    tools:context="com.filkra.kraguide.ButtonsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nativeAdView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOne"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="ABOUT KRA PIN"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTwo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="TAX COMPLIANCE"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="File Your Returns B4 30th June to Avoid Penalties"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnThree"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="REMOVAL OF OBLIGATION"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFour"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="COMPANY PIN REGISTRATION"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFive"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="RETURN FILING"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSix"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="FILING WITH WITHHOLDING CERTS"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VAT AND RENTALS FILING BY 20th EVERY MONTH"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSeven"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="FILING RENTAL, VAT AND PAYE"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEight"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="FILING INCOME FROM BUSINESS"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+            <FrameLayout
+                android:id="@+id/adViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Always Select Income Tax Resident When Filing Individual Return"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNine"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="AMENDED RETURNS"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTen"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:backgroundTint="@color/white"
+                android:text="DISABLED PERSONS CAR IMPORTATION"
+                android:layout_margin="5dp"
+                app:cornerRadius="8dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/nativeAdView"
+        app:gnt_template_type="@layout/gnt_small_template_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

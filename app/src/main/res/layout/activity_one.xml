@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nativeAdView">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kra"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ABOUT KRA PIN"
+            android:layout_margin="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PIN REGISTRTION FOR RESIDENTS"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Kindly visit itax.kra.go.ke and click on the new PIN registration link, select taxpayer type (individual), mode of registration (online form), click next and fill in all the required details and submit. A PIN certificate will be issued on the spot.
+
+                       REPRINTING PIN CERTIFICATE
+Kindly log in to ITax using your PIN and password, click on the registration tab then select reprint PIN certificate.  Your PIN certificate will be sent to the registered email address.
+
+                       PIN RETRIEVAL/EMAIL CHANGE
+To retrieve your KRA PIN or change forgotten email send colored scanned copy of your original ID to callcentre@kra.go.ke or visit the nearest KRA Office or Huduma Center with
+your original ID.
+
+                       PIN UPDATE
+Kindly visit itax.kra.go.ke and key in your PIN in the section 'Enter PIN/User ID * ' and click continue. A link with 'click here to update will populate. You will then click on the link and fill in the sections with the correct details then submit. Please note that you will receive the login credentials for itax.kra.go.ke.
+" />
+    </LinearLayout>
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/nativeAdView"
+        app:gnt_template_type="@layout/gnt_small_template_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

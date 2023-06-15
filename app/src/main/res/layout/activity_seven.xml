@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SevenActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/adViewContainer"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ng20"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FILING RENTAL, VAT AND PAYE"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rental Filing"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kindly note that rental filing has been simplified. Log in to your itax profile using PIN and password, click on returns, file returns, select obligation (income tax-rent income), fill the details and submit
+            Deadline for Filing PAYE is 9th and Penalty is Kshs 10,000 While VAT and Rental is 20th of every Month and Penalties are Kshs 10,000 and Kshs 2,000 Respectively" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filing VAT/PAYE"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kindly log in to itax using your PIN and password, click on the Return Tab and select File Return option. Select the tax obligation as Income Tax - VAT then click on next.
+·          There will be a list of steps to follow. Under number five click on 'Click Here' to download file.
+-      Enable the macros, save the file as excel macro enabled workbook, close it and re-open from the location it has been saved.
+·          Under Section A Basic Information, fill in with your PIN, period ant type of return as original.
+·          Fill the excel form appropriately.
+·          Once you have completed filing the form click on 'VALIDATE' at the end of the O_VAT due work sheet. Once the form validates it will save itself under ‘My Documents’. You will go back to your itax profile and upload the zip file.
+" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

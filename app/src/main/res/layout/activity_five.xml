@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiveActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adViewContainer"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/june"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="RETURN FILING"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Nil returns"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kindly log to your iTax portal using the PIN and password. Click on the returns tab then select file nil returns. Select the tax obligation (Income Tax Resident Individual For Kenyans), enter the return period then submit." />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For ITR for employment income only"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="
+Kindly login to your iTax portal using the PIN and password. Click on ITR for employment income only on the returns tab. Enter the return period, and select YES to having employment income only. Fill in all the information in section A appropriately, do not fill anything in section F and M as it is already pre filled. Enter details of advance tax in section Q if any. In section T, ensure you fill in your pension deductions on SR.1.1 and personal relief on S.R 2.5 then submit.
+
+" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To File Actual Return"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kindly log in to iTax using your PIN and password, click on the Return Tab and select File Return option. Select the tax obligation as Income Tax - Resident Individual then click on next.
+•  There will be a list of steps to follow. Under number five click on 'Click Here' to download file.
+•  Download it and fill the excel form using your p9 form. Do not forget to fill in pension details and personal relief on the last sheet.
+Once you have completed filing the form click on 'VALIDATE' at the end of the T_ Tax Computation work sheet. Once the form validates it will save itself under ‘My Documents’ . You will go back to your iTAX profile and upload the zip file.
+" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

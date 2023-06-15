@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/adViewContainer"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/a03s"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="COMPANY/CBO PIN REGISTRATION"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NB"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="For Company Attach Incoporation Cert, CR12 and IDs Of Directors
+FOR CBOs Attach Registration Cert, Constitution, Minutes and IDs Of Officials" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Now Follow Bellow Steps"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kindly visit itax.kra.go.ke, to initiate the process and click on New PIN registration then select Taxpayer type Non-Individual and Mode of registration (choose either online form or upload form). Select Business type as Others and select appropriate business sub type.
+Please note Tax Obligations include:
+
+i.	Income Tax Company - This is a compulsory tax obligation for purposes of declaring any income earned within a stipulated period of time.
+ii.	Pay As you Earn - If you are an employer, you are required to register for this obligation.
+iii.	Value Added Tax - Any person supplying or who expects to supply taxable goods and taxable services with a value of Kshs 5 Million or more in a year qualifies to register for VAT. The law also allows for voluntary registration.
+
+Select your 'Source of income' if any and provide necessary details under source selected. If you have a tax agent, you are required to enter their details in the agent details section if you don’t have one leave the section blank. Fill in correct answer to arithmetic sum provided and click on 'Submit'. Ensure you input at least 1 PIN of the company director(s) to will be used for the initiation process. Always ensure the directors details are tax compliant and is on ITax.
+
+You will receive an acknowledgment receipt on completion of the online application.
+A follow up email will be sent to you with either further instructions on where to present the required documentation for verification or a PIN certificate.
+" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.B_DivineLoans"
+        tools:targetApi="31">
+        <activity
+            android:name="com.filkra.kraguide.EightActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.SevenActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.SixActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.FiveActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.TenActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.NineActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.FourActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.ThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.TwoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.ButtonsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.OneActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.filkra.kraguide.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/Application_Id" />
+    </application>
+</manifest>

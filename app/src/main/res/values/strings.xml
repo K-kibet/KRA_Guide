@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KRA SERVICE GUIDE</string>
+    <!--App Id -->
+    <string name="Application_Id">ca-app-pub-3940256099942544~3347511713</string>
+    <!--Ad Unit -->
+    <string name="Interstitial_Ad_Unit">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Native_Ad_Unit">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="Banner_Ad_Unit">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
